@@ -9,7 +9,6 @@ class Calculator extends Component {
     this.state = {
       valueOnDisplay: "23121231"
     };
-    this.log = this.handleKeyPress;
   }
 
   handleKeyPress() {
@@ -23,7 +22,7 @@ class Calculator extends Component {
           value={this.state.valueOnDisplay}
         />
         <div className="row">
-          <Button id='accent-grey' value='AC' />
+          <Button onPress={this.handleKeyPress} id='accent-grey' value='AC' />
           <Button id='accent-grey' value='+/-' />
           <Button id='accent-grey' value='%' />
           <Button value='/' />
