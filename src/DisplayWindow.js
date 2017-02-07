@@ -3,9 +3,6 @@ import './css/DisplayWindow.css';
 
 class DisplayWindow extends Component {
 
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="display-window">
