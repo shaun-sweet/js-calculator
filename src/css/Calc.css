@@ -1,12 +1,5 @@
-@media screen and (orientation: portrait) {
-  .App {
-    display: flex;
-    flex-flow: column;
-    min-height: 100vh;
-  }
-}
-
-@media screen and (orientation: landscape) {
-
-
+.App {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
 }

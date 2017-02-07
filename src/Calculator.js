@@ -9,6 +9,11 @@ class Calculator extends Component {
     this.state = {
       valueOnDisplay: "23121231"
     };
+    this.log = this.handleKeyPress;
+  }
+
+  handleKeyPress() {
+    console.log('hi');
   }
 
   render() {
@@ -18,9 +23,9 @@ class Calculator extends Component {
           value={this.state.valueOnDisplay}
         />
         <div className="row">
-          <Button value='AC' />
-          <Button value='+/-' />
-          <Button value='%' />
+          <Button id='accent-grey' value='AC' />
+          <Button id='accent-grey' value='+/-' />
+          <Button id='accent-grey' value='%' />
           <Button value='/' />
         </div>
         <div className="row">
@@ -42,9 +47,9 @@ class Calculator extends Component {
           <Button value='+' />
         </div>
         <div className="row">
-          <Button value='0' />
+          <Button id='zero-btn' value='0' />
           <Button value='.' />
-          <Button id='equals-btn' value='=' />
+          <Button value='=' />
         </div>
       </div>
     );

@@ -5,9 +5,18 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-
+  background-color: #D1D2D5;
+  font-size: 25px;
+  
 }
 
-#equals-btn {
+#zero-btn {
   flex: 2;
+}
+#accent-grey {
+  background-color: #CACCCD;
+}
+.row .button:last-of-type {
+  background-color: #F98E12;
+  color: white;
 }
