@@ -1,0 +1,13 @@
+.button {
+  flex: 1;
+  outline: solid 1px #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+#equals-btn {
+  flex: 2;
+}
