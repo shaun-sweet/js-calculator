@@ -6,7 +6,7 @@ class DisplayWindow extends Component {
   render() {
     return (
       <div className="display-window">
-        <div className="display-content">
+        <div style={{fontSize: this.props.fontSize+'px'}} className="display-content">
           {this.props.value}
         </div>
       </div>
