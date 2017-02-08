@@ -9,7 +9,9 @@ class Button extends Component {
       id = this.props.id;
     }
     return (
-      <div id={id} onMouseDown={this.props.onPress} className="button">
+      <div id={id}
+        onMouseDown={()=> this.props.onPress(this.props.value)}
+        className="button">
          { this.props.value }
       </div>
     );
